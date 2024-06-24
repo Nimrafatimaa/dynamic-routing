@@ -22,11 +22,11 @@ const Mainnav = ({ data }) => {
       <div  className=' w-full flex items-center justify-center '>
       
       {allDisplayed ? (
-          <button className='bg-gray-900 text-white px-3 py-2 rounded-md' onClick={showLess}>
+          <button className='bg-gray-600 text-white px-3 py-2 rounded-md' onClick={showLess}>
             Show less
           </button>
         ) : (
-          <button className='bg-gray-900 text-white px-3 py-2 rounded-md' onClick={showMore}>
+          <button className='bg-gray-600 text-white px-3 py-2 rounded-md' onClick={showMore}>
             Load more
           </button>
         )}

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Mainnav from './Mainnav';
 import CardDetails from './CardDetails';
+import Foot from './Foot';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -65,6 +66,7 @@ const App = () => {
           <Route exact path="/" element={<Mainnav data={data} />} />
           <Route path="/card/:id" element={<CardDetails data={data} />} />
         </Routes>
+        <Foot/>
       </BrowserRouter>
     </div>
   );
